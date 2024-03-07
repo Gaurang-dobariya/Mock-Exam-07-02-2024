@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <h3>Enter Your Subject Marks</h3>
+
+    <label>English :- </label>
+    <input type="text" id="english" />
+    <label>Maths :- </label>
+    <input type="text" id="maths" />
+    <label>Science :- </label>
+    <input type="text" id="science" />
+    <label>Hindi :- </label>
+    <input type="text" id="hindi" />
+    <label>Gujrati :- </label>
+    <input type="text" id="gujrati" /><br /><br />
+
+    <button onclick="Submit()">Calculate</button>
+
+    <script>
+      function Submit() {
+
+        let English = parseInt(document.getElementById("english").value)
+        let Maths = parseInt(document.getElementById("maths").value)
+        let Science = parseInt(document.getElementById("maths").value)
+        let Hindi = parseInt(document.getElementById("hindi").value)
+        let Gujrati = parseInt(document.getElementById("gujrati").value)
+
+
+       
+      }
+    </script>
+  </body>
+</html>

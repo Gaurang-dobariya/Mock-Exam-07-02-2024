@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin</title>
+</head>
+<body>
+    
+    <label>Admin Name :- </label>
+    <input type="text" id="name">
+    <label>Pasword :- </label>
+    <input type="text" id="password">
+
+    <button onclick="Submit()">submit</button>
+
+    <h1 id="head"></h1>
+
+    <script>
+
+        let admin = "Gaurang"
+        let pass = 123
+
+        function Submit(){
+
+            let name = document.getElementById("name").value
+            let password = document.getElementById("password").value
+
+            if(admin == name){
+
+                if(pass == password){
+
+                    document.getElementById("head").innerHTML = "Login Sucessfull"
+                    location.href = "file:///D:/4319%20Gaurang/Javascript%20-%20Exam/marks.html"
+
+                }
+
+            }
+            else{
+
+                  document.getElementById("head").innerHTML = "Enter Valid Details"
+
+            }
+
+        }
+
+
+
+
+        
+    </script>
+
+</body>
+</html>
